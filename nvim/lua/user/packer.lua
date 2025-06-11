@@ -13,19 +13,32 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use (
+  use {
 	  'nvim-treesitter/nvim-treesitter',
 	  {
 		  run = ':TSUpdate'
 	  }
-  )
-  use ('nvim-treesitter/playground')  
+  }
 
-  use ( 'theprimeagen/harpoon' )
+  use {
+      'nvim-treesitter/playground',
+  }
 
-  use ( 'mbbill/undotree' )
+  use {
+      'theprimeagen/harpoon',
+  }
 
-  use ( 'tpope/vim-fugitive' )
+  use {
+      'mbbill/undotree',
+  }
+
+  use {
+      'tpope/vim-fugitive',
+  }
+
+  use {
+      'lambdalisue/vim-suda',
+  }
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
@@ -58,8 +71,11 @@ return require('packer').startup(function(use)
       }
   }
 
-  use ( 'lambdalisue/vim-suda' )
+  use {
+      'mrcjkb/rustaceanvim',
+  }
 
+  use("windwp/nvim-autopairs")
 
   use ({
 	  'rebelot/kanagawa.nvim',

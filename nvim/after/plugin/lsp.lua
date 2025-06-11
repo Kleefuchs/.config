@@ -14,7 +14,6 @@ require('mason-lspconfig').setup({
 	  'html',
 	  'jsonls',
 	  'eslint',
-      'java_language_server',
   },
   handlers = {
     function(server_name)
@@ -69,3 +68,5 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.keymap.set('n', '<F4>', '<cmd>lua vim.lsp.buf.code_action()<cr>', opts)
   end,
 })
+
+vim.diagnostic.config({ virtual_text = true })

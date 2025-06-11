@@ -19,26 +19,20 @@
     "custom/notification",
     "custom/power",
   ],
-  "custom/spotify": {
-    "format": "  {}",
+  "custom/mpris": {
+    "exec": "waybar-mpris --position --autofocus",
     "return-type": "json",
-    "on-click": "playerctl -p spotify play-pause",
-    "on-click-right": "spotifatius toggle-liked",
-    "on-click-middle": "playerctl -p spotify next",
-    "exec": "spotifatius monitor",
-  },
-  "mpris": {
-    "player": "spotify",
-    "dynamic-order": ["artist", "title"],
-    "format": "{player_icon} {dynamic}",
-    "format-paused": "{status_icon} <i>{dynamic}</i>",
-    "status-icons": {
-      "paused": "",
-    },
-    "player-icons": {
-      "default": "",
-    },
-  },
+    "on-click": "waybar-mpris --send toggle",
+    // This option will switch between players on right click.
+        "on-click-right": "waybar-mpris --send player-next",
+    // The options below will switch the selected player on scroll
+        // "on-scroll-up": "waybar-mpris --send player-next",
+        // "on-scroll-down": "waybar-mpris --send player-prev",
+    // The options below will go to next/previous track on scroll
+        // "on-scroll-up": "waybar-mpris --send next",
+        // "on-scroll-down": "waybar-mpris --send prev",
+    "escape": true,
+},
   "hyprland/workspaces": {
     "on-click": "activate",
     "format": "{id}",
