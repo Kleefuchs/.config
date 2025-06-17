@@ -79,7 +79,9 @@ return require('packer').startup(function(use)
       'mrcjkb/rustaceanvim',
   }
 
-  use("windwp/nvim-autopairs")
+  use {
+      "windwp/nvim-autopairs",
+  }
 
   use ({
 	  'rebelot/kanagawa.nvim',
