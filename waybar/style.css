@@ -11,7 +11,8 @@ window#waybar {
   transition-duration: 0.5s;
   /* background-color: #1e1e2e; */
   /* background-color: #181825; */
-  background-color: #11111b;
+  background-color: rgba(200,50, 200, 0.15);
+  border-bottom: 2px rgba(200, 50, 200, 0.3) solid;
   /* background-color: rgba(24, 24, 37, 0.6); */
 }
 
@@ -20,23 +21,23 @@ window#waybar {
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
   /* background-color: #181825; */
-  background-color: #1e1e2e;
-  color: #cdd6f4;
+  background-color: rgba(200, 50, 200, 0.35);
+  color: white;
 }
 
 #workspaces button:hover {
-  color: #1e1e2e;
-  background-color: #cdd6f4;
+  color: white;
+  background-color: rgba(200, 50, 200, 0.75);
 }
 
 #workspaces button.active {
-  background-color: #1e1e2e;
-  color: #89b4fa;
+  background-color: rgba(200,50, 200, 1.0);
+  color: white;
 }
 
 #workspaces button.urgent {
-  background-color: #1e1e2e;
-  color: #f38ba8;
+  background-color: rgba(250, 50, 150, 0.85);
+  color: white;
 }
 
 #clock,
@@ -54,15 +55,16 @@ window#waybar {
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
   /* background-color: #181825; */
-  background-color: #1e1e2e;
+  background-color: rgba(200, 50, 200, 0.5);
+  color: black;
 }
 
 #mpris.playing {
-  color: #a6e3a1;
+  color: rgba(50, 255, 50, 1.0);
 }
 
 #mpris.paused {
-  color: #9399b2;
+  color: rgba(50, 90, 150, 1.0);
 }
 
 #custom-sep {
