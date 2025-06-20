@@ -42,4 +42,19 @@ cd ..
 sudo rm -r config
 ```
 
+**<h3>Neovim specific stuff</h3>**
+
+Navigate into the Neovim configuration and open Neovim.
+```
+cd ~/.config/nvim
+nvim
+```
+
+Inside Neovim open Explorer (with ```:Ex```) and navigate into ```user/lua/packer-bootstrap.lua```.
+Now that you are inside the file use ```:so``` to source the file and install packer.
+
+<br />
+
+After that navigate into ```user/lua/packer.lua``` and enter ```:so``` to source and ```:PackerSync``` to install of the plugins.
+
 So vola now you have this config installed
