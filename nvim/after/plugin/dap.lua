@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-nvim-dap").setup({
-    ensure_installed = {"codelldb"},
+    ensure_installed = {"codelldb", "lldb"},
     automatic_installation = true,
     handlers = {},
 })
@@ -37,30 +37,12 @@ dap.adapters.codelldb = {
   executable = {
     command = 'codelldb',
     args = { "--port", "${port}" },
-
     -- On windows you may have to uncomment this:
     -- detached = false,
   }
 }
 
-dap.configurations.c = {
-    {
-        type = 'codelldb',
-        request = 'launch',
-        program = function()
-            return vim.fn.input('Path to executable: ', vim.fn.getcwd()..'/', 'file')
-        end,
-        --program = '${fileDirname}/${fileBasenameNoExtension}',
-        cwd = '${workspaceFolder}',
-        terminal = 'integrated'
-    }
-}
-
-dap.configurations.cpp = dap.configurations.c
-
-
-dap.configurations.rust = {
-  {
+local codelldb = {
     name = "Launch file",
     type = "codelldb",
     request = "launch",
@@ -69,7 +51,19 @@ dap.configurations.rust = {
     end,
     cwd = '${workspaceFolder}',
     stopOnEntry = false,
-  },
+}
+
+dap.configurations.c = {
+    codelldb
+}
+
+dap.configurations.cpp = {
+    codelldb
+}
+
+
+dap.configurations.rust = {
+    codelldb
 }
 
 vim.keymap.set("n", "<leader>db", function () dap.toggle_breakpoint() end)
