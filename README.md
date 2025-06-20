@@ -9,6 +9,7 @@ I've intentionally made it relatively easy to install (at least on Arch Linux).
 **[yay](https://github.com/Jguer/yay)**
 <br />
 <br />
+<br />
 
 **<h4>Clone and enter repository</h4>**
 
