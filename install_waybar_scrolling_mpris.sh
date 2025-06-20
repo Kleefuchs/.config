@@ -4,4 +4,4 @@ cd ./waybar-scrolling-mpris/build
 cmake ..
 make
 
-mv waybar-scrolling-mpris ~/.config/waybar/waybar-scrolling-mpris
+sudo mv waybar-scrolling-mpris ~/.config/waybar/waybar-scrolling-mpris
