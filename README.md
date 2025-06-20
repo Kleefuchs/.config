@@ -1,23 +1,27 @@
-<h2>**The following dependencies are not installed by the install.sh script because they themselves are needed by the script**</h2>
+<h3>**The following dependencies are not installed by the install.sh script because they themselves are needed by the script**</h3>
 [yay](https://github.com/Jguer/yay)
 
-**Clone and enter repository**
+<h4>**Clone and enter repository**</h4>
+
 ```
 git clone https://github.com/Kleefuchs/.config.git config
 cd config
 ```
 
-**Copy everything into the .config folder**
+<h4>**Copy everything into the .config folder**</h4>
+
 ```
 sudo cp -r ./* ~/.config/
 ```
-**
-Install all packages and build waybar-scrollable-mpris**
+
+<h4>**Install all packages and build waybar-scrollable-mpris**</h4>
+
 ```
 ./install.sh  # On Arch-Linux
 ```
 
-**Exit and escape **
+<h4>**Exit and escape **</h4>
+
 ```
 cd ..
 sudo rm -r config
