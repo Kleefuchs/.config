@@ -57,4 +57,7 @@ Now that you are inside the file use ```:so``` to source the file and install pa
 
 After that navigate into ```user/lua/packer.lua``` and enter ```:so``` to source and ```:PackerSync``` to install of the plugins.
 
+**<h3>Wallpaper related stuff</h3>**
+The active Wallpapers for swww are supposed to be in ```~/Wallpapers/active```
+
 So vola now you have this config installed
