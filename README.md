@@ -6,7 +6,7 @@ I've intentionally made it relatively easy to install (at least on Arch Linux).
 **<h2>How to install them</h2>**
 
 **<h3>The following dependencies are not installed by the install.sh script because they themselves are needed by the script</h3>**
-**[yay]("https://github.com/Jguer/yay)**
+**[yay](https://github.com/Jguer/yay)**
 
 
 **<h4>Clone and enter repository</h4>**
