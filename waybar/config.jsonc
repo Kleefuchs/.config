@@ -8,7 +8,7 @@
   "passthrough": false,
   "fixed-center": true,
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
-  "modules-center": ["mpris"],
+  "modules-center": ["custom/waybar-scrolling-mpris",],
   "modules-right": [
     "cpu",
     "memory",
@@ -19,20 +19,19 @@
     "custom/notification",
     "custom/power",
   ],
-  "custom/mpris": {
-    "exec": "waybar-mpris --position --autofocus",
-    "return-type": "json",
-    "on-click": "waybar-mpris --send toggle",
-    // This option will switch between players on right click.
-        "on-click-right": "waybar-mpris --send player-next",
-    // The options below will switch the selected player on scroll
-        // "on-scroll-up": "waybar-mpris --send player-next",
-        // "on-scroll-down": "waybar-mpris --send player-prev",
-    // The options below will go to next/previous track on scroll
-        // "on-scroll-up": "waybar-mpris --send next",
-        // "on-scroll-down": "waybar-mpris --send prev",
-    "escape": true,
-},
+
+  "custom/waybar-scrolling-mpris": {
+      "format": "{}",
+      "display-format": "{icon}  {artist} - {title}",
+      "exec": "~/.config/waybar/waybar-scrolling-mpris ~/.config/waybar/config.jsonc",
+      "icons": {
+          "Paused": "⏸",
+          "Playing": "▶",
+          "Stopped": "■",
+      },
+      "length": 40,
+  },
+
   "hyprland/workspaces": {
     "on-click": "activate",
     "format": "{id}",
