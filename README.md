@@ -1,3 +1,10 @@
+**<h1>These are my personal dotfiles feel free to use them. :)</h1>**
+
+I made this repo so I don't need to carry a USB-Stick with me every time I reinstall or install on a new machine.
+I've intentionally made it relatively easy to install (at least on Arch Linux).
+
+**<h2>How to install them</h2>**
+
 **<h3>The following dependencies are not installed by the install.sh script because they themselves are needed by the script</h3>**
 [yay](https://github.com/Jguer/yay)
 
