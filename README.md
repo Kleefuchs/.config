@@ -33,7 +33,7 @@ sudo cp -r ./* ~/.config/
 
 ```
 cd installation
-.install.sh  # On Arch-Linux
+./install.sh  # On Arch-Linux
 ```
 
 **<h4>Exit and escape</h4>**
