@@ -29,10 +29,11 @@ cd config
 sudo cp -r ./* ~/.config/
 ```
 
-**<h4>Install all packages and build waybar-scrollable-mpris</h4>**
+**<h4>Install all needed software</h4>**
 
 ```
-./install.sh  # On Arch-Linux
+cd installation
+.install.sh  # On Arch-Linux
 ```
 
 **<h4>Exit and escape</h4>**
