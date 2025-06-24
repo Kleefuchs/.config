@@ -14,6 +14,7 @@ require('mason-lspconfig').setup({
 	  'html',
 	  'jsonls',
 	  'eslint',
+      'asm_lsp',
   },
   handlers = {
     function(server_name)
