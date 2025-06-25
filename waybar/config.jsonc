@@ -1,5 +1,5 @@
 {
-  "layer": "bottom",
+  "layer": "top",
   "position": "top",
   "height": 40,
   "spacing": 2,
@@ -8,7 +8,7 @@
   "passthrough": false,
   "fixed-center": true,
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
-  "modules-center": ["mpris"],
+  "modules-center": ["custom/waybar-scrolling-mpris",],
   "modules-right": [
     "cpu",
     "memory",
@@ -19,26 +19,19 @@
     "custom/notification",
     "custom/power",
   ],
-  "custom/spotify": {
-    "format": "  {}",
-    "return-type": "json",
-    "on-click": "playerctl -p spotify play-pause",
-    "on-click-right": "spotifatius toggle-liked",
-    "on-click-middle": "playerctl -p spotify next",
-    "exec": "spotifatius monitor",
+
+  "custom/waybar-scrolling-mpris": {
+      "format": "{}",
+      "display-format": "{icon}  {artist} - {title}",
+      "exec": "~/.config/waybar/waybar-scrolling-mpris ~/.config/waybar/config.jsonc",
+      "icons": {
+          "Paused": "⏸",
+          "Playing": "▶",
+          "Stopped": "■",
+      },
+      "length": 40,
   },
-  "mpris": {
-    "player": "spotify",
-    "dynamic-order": ["artist", "title"],
-    "format": "{player_icon} {dynamic}",
-    "format-paused": "{status_icon} <i>{dynamic}</i>",
-    "status-icons": {
-      "paused": "",
-    },
-    "player-icons": {
-      "default": "",
-    },
-  },
+
   "hyprland/workspaces": {
     "on-click": "activate",
     "format": "{id}",

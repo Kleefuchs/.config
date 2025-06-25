@@ -1,18 +1,1 @@
-*    
-
-!*/
-    
-
-# track this file
-    
-
-!.gitignore
-    
-
-# whitelist everything in ./config/
-    
-
-!hypr/
-!waybar/
-!kitty/
-!nvim/
+installation/ferr-exec
