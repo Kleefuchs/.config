@@ -144,6 +144,11 @@ _G.packer_plugins = {
     path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["nvim-autopairs"] = {
+    loaded = true,
+    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -174,10 +179,20 @@ _G.packer_plugins = {
     path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/nvim-nio",
     url = "https://github.com/nvim-neotest/nvim-nio"
   },
+  ["nvim-surround"] = {
+    loaded = true,
+    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/nvim-surround",
+    url = "https://github.com/kylechui/nvim-surround"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-treesitter-context"] = {
+    loaded = true,
+    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -193,6 +208,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  rustaceanvim = {
+    loaded = true,
+    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/rustaceanvim",
+    url = "https://github.com/mrcjkb/rustaceanvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
