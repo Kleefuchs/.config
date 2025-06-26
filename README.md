@@ -32,7 +32,7 @@ sudo cp -r ./* ~/.config/
 **<h4>Install all needed software</h4>**
 
 ```
-cd installation
+cd .installation
 ./install.sh  # On Arch-Linux
 ```
 
