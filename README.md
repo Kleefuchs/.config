@@ -3,6 +3,9 @@
 I made this repo so I don't need to carry a USB-Stick with me every time I reinstall or install on a new machine.
 I've intentionally made it relatively easy to install (at least on Arch Linux).
 
+<br />
+<br />
+
 ![Only Hyprland](https://github.com/user-attachments/assets/6ec75fce-6165-4fa5-a256-9d9ae9bb65b1)
 
 ![Hyprland and kitty](https://github.com/user-attachments/assets/5f9b068b-329b-4363-b0d2-db426b4a8427)
