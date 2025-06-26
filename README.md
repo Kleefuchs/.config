@@ -3,6 +3,22 @@
 I made this repo so I don't need to carry a USB-Stick with me every time I reinstall or install on a new machine.
 I've intentionally made it relatively easy to install (at least on Arch Linux).
 
+<br />
+<br />
+
+![Only Hyprland](https://github.com/user-attachments/assets/6ec75fce-6165-4fa5-a256-9d9ae9bb65b1)
+
+![Hyprland and kitty](https://github.com/user-attachments/assets/5f9b068b-329b-4363-b0d2-db426b4a8427)
+
+![Neovim CPP](https://github.com/user-attachments/assets/0922a330-e5b9-4f0d-8cbd-5177e609945d)
+
+Neovim does have dap (+dap-ui) and lsp support.
+It also shows your errors inline.
+
+![Waybar](https://github.com/user-attachments/assets/2c1cbf33-e60c-4f02-abaa-aa7021f4b5d8)
+
+
+
 **<h2>How to install them</h2>**
 
 **<h3>If you have already installed them just run git pull in your .config directory!!! This makes your life much easier.</h3>**
