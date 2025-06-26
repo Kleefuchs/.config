@@ -15,7 +15,8 @@ I've intentionally made it relatively easy to install (at least on Arch Linux).
 Neovim does have dap (+dap-ui) and lsp support.
 It also shows your errors inline.
 
-![Waybar](https://github.com/user-attachments/assets/10b31af5-813f-431c-b732-f0412b0d09a1)
+![Waybar](https://github.com/user-attachments/assets/2c1cbf33-e60c-4f02-abaa-aa7021f4b5d8)
+
 
 
 **<h2>How to install them</h2>**
