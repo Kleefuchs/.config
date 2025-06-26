@@ -67,39 +67,40 @@ window#waybar.empty #window {
 }
 
 #cpu {
-  color: #94e2d5;
+  color: rgba(75, 235, 75, 0.8);
 }
 
 #memory {
-  color: #cba6f7;
+  color: rgba(250, 190, 190, 0.8);
+}
+
+#pulseaudio {
+  color: rgba(120, 120, 255, 0.8);
+}
+
+#pulseaudio.muted {
+  color: rgba(30, 30, 90, 0.25);
 }
 
 #clock {
-  color: #74c7ec;
+  color: rgba(200, 250, 50, 0.8);
 }
 
 #clock.simpleclock {
-  color: #89b4fa;
+  color: rgba(250, 200, 50, 0.8);
 }
 
 #window {
   color: #cdd6f4;
 }
 
-#pulseaudio {
-  color: #b4befe;
-}
-
-#pulseaudio.muted {
-  color: #a6adc8;
-}
 
 #custom-logo {
   color: #89b4fa;
 }
 
 #custom-power {
-  color: #f38ba8;
+  color: rgba(255, 50, 50, 0.8);
 }
 
 tooltip {
