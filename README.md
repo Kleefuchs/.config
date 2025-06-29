@@ -2,22 +2,26 @@
 
 https://github.com/Kleefuchs/.config
 
-I made this so i can flex and have my hyprland config everywhere 
+I made this so i can flex and have my hyprland config everywhere.
+also the whole config is catppuccin themed
 
 <br />
 <br />
-
-![Only Hyprland](https://github.com/user-attachments/assets/6ec75fce-6165-4fa5-a256-9d9ae9bb65b1)
-
-![Hyprland and kitty](https://github.com/user-attachments/assets/5f9b068b-329b-4363-b0d2-db426b4a8427)
-
-![Neovim CPP](https://github.com/user-attachments/assets/0922a330-e5b9-4f0d-8cbd-5177e609945d)
+<h1>Desktop</h1>
+![Desktop]
+<h1>Kitty</h1>
+![kitty]
+<h1>Neovim File Tree</h1>
+![Neovim]
+<h1>Neovim when coding</h1>
+![Neovim]
+<h1>Cava</h1>
+![Cava]
 
 Neovim does have dap (+dap-ui) and lsp support.
 It also shows your errors inline.
-
-![Waybar](https://github.com/user-attachments/assets/2c1cbf33-e60c-4f02-abaa-aa7021f4b5d8)
-
+<h1>Waybar</h1>
+![Waybar]
 
 
 **<h2>How to install them</h2>**
