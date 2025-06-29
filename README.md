@@ -8,20 +8,31 @@ also the whole config is catppuccin themed
 <br />
 <br />
 <h1>Desktop</h1>
-![Desktop]
+
+![desktop](https://github.com/Julianos1b/.config/blob/main/pictures/Desktop.png)
+
 <h1>Kitty</h1>
-![kitty]
-<h1>Neovim File Tree</h1>
-![Neovim]
+
+![kitty](https://github.com/Julianos1b/.config/blob/main/pictures/Kitty.png)
+
+<h1>Neovim Filetree</h1>
+
+![Neovim](https://github.com/Julianos1b/.config/blob/main/pictures/Nvim_Filetree.png)
+
 <h1>Neovim when coding</h1>
-![Neovim]
+
+![Neovim](https://github.com/Julianos1b/.config/blob/main/pictures/Nvim_Coding.png)
+
 <h1>Cava</h1>
-![Cava]
+
+![Cava](https://github.com/Julianos1b/.config/blob/main/pictures/cava.png)
 
 Neovim does have dap (+dap-ui) and lsp support.
 It also shows your errors inline.
+
 <h1>Waybar</h1>
-![Waybar]
+
+![Waybar](https://github.com/Julianos1b/.config/blob/main/pictures/Waybar.png)
 
 
 **<h2>How to install them</h2>**
@@ -34,15 +45,10 @@ You still need to run install.sh!
 **<h3>The following dependencies are not installed by the install.sh script because they themselves are needed by the script</h3>**
 **[yay](https://github.com/Jguer/yay)**
 <br />
-<br />
-<br />
 
-**<h4>Clone and enter repository</h4>**
 
-```
-git clone https://github.com/Kleefuchs/.config.git config
-cd config
-```
+**<h4>Go over the Releases tab and Download the latest config</h4>**
+
 
 **<h4>Copy everything into the .config directory</h4>**
 
