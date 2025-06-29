@@ -88,9 +88,7 @@ return require('packer').startup(function(use)
     tag = "*", -- Use for stability; omit to use `main` branch for the latest features
   })
 
-  use ({
-	  'rebelot/kanagawa.nvim',
-	  as = 'kanagawa',
-  })
-
-end)
+  use { 
+      "catppuccin/nvim", 
+      as = "catppuccin" }
+  end)
