@@ -1,7 +1,8 @@
-**<h1>These are my personal dotfiles feel free to use them. :)</h1>**
+**<h1>These dotfiles are based from and made from the config of Kleefuchs, which was also a great contributor to my dotfiles</h1>**
 
-I made this repo so I don't need to carry a USB-Stick with me every time I reinstall or install on a new machine.
-I've intentionally made it relatively easy to install (at least on Arch Linux).
+https://github.com/Kleefuchs/.config
+
+I made this so i can flex and have my hyprland config everywhere 
 
 <br />
 <br />
