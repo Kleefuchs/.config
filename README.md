@@ -45,15 +45,10 @@ You still need to run install.sh!
 **<h3>The following dependencies are not installed by the install.sh script because they themselves are needed by the script</h3>**
 **[yay](https://github.com/Jguer/yay)**
 <br />
-<br />
-<br />
 
-**<h4>Clone and enter repository</h4>**
 
-```
-git clone https://github.com/Julianos/.config.git config
-cd config
-```
+**<h4>Go over the Releases tab and Download the latest config</h4>**
+
 
 **<h4>Copy everything into the .config directory</h4>**
 
