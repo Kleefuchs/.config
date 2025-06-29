@@ -51,7 +51,7 @@ You still need to run install.sh!
 **<h4>Clone and enter repository</h4>**
 
 ```
-git clone [https://github.com/Julianos/.config.git] config
+git clone https://github.com/Julianos/.config.git config
 cd config
 ```
 
