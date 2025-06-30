@@ -23,12 +23,18 @@ also the whole config is catppuccin themed
 
 ![Neovim](https://github.com/Julianos1b/.config/blob/main/pictures/Nvim_Coding.png)
 
+Neovim does have dap (+dap-ui) and lsp support.
+It also shows your errors inline.
+
 <h1>Cava</h1>
 
 ![Cava](https://github.com/Julianos1b/.config/blob/main/pictures/cava.png)
 
-Neovim does have dap (+dap-ui) and lsp support.
-It also shows your errors inline.
+<h1>Fastfetch</h1>
+
+![Fastfetch](https://github.com/Julianos1b/.config/blob/main/pictures/Fastfetch.png)
+
+under ~/.config/fastfetch/config.jsonc you can change the logo right at the bottom to any desired logo you want. 
 
 <h1>Waybar</h1>
 
