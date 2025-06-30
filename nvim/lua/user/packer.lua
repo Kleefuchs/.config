@@ -87,6 +87,14 @@ return require('packer').startup(function(use)
   })
 
   use ({
+      "famiu/feline.nvim"
+  })
+
+  use ({
+      "nvim-tree/nvim-web-devicons"
+  })
+
+  use ({
 	  'rebelot/kanagawa.nvim',
 	  as = 'kanagawa',
   })
