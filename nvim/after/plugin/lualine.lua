@@ -52,3 +52,6 @@ require('lualine').setup {
   inactive_winbar = {},
   extensions = {}
 }
+
+
+vim.opt.cmdheight = 0
