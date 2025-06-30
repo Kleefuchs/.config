@@ -87,6 +87,10 @@ return require('packer').startup(function(use)
   })
 
   use ({
+      "famiu/feline.nvim"
+  })
+
+  use ({
 	  'rebelot/kanagawa.nvim',
 	  as = 'kanagawa',
   })
