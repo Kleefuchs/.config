@@ -91,6 +91,10 @@ return require('packer').startup(function(use)
   })
 
   use ({
+      "nvim-tree/nvim-web-devicons"
+  })
+
+  use ({
 	  'rebelot/kanagawa.nvim',
 	  as = 'kanagawa',
   })
