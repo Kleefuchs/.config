@@ -1,4 +1,10 @@
 q
+vol 75%
+vol 100
+vol 20
+vol 80%
+vol 100%
+volume
 colorscheme solarized-dark
 colorscheme jellybeans
 colorscheme night
@@ -31,7 +37,6 @@ vol
 +50
 vol 0.5
 vol 50
-vol 100
 vol 1
 vol -50
 vol -5

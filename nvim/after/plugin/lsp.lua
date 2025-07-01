@@ -14,13 +14,13 @@ require('mason-lspconfig').setup({
 	  'html',
 	  'jsonls',
 	  'eslint',
+      'ts_ls',
       'asm_lsp',
       'jsonls',
-
   },
 
 
-  handlers = {
+    handlers = {
     function(server_name)
       require('lspconfig')[server_name].setup({})
     end,
