@@ -45,6 +45,15 @@ return require('packer').startup(function(use)
     }
 
     use {
+        "williamboman/mason.nvim",
+        ensure_installed = {
+            'html-lsp',
+            'typescript-language-server',
+            'emmet-language-server',
+        }
+    }
+
+    use {
         'VonHeikemen/lsp-zero.nvim',
         requires = {
             {'neovim/nvim-lspconfig'},
@@ -98,6 +107,10 @@ return require('packer').startup(function(use)
         'nvim-lualine/lualine.nvim',
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
+
+    use ({
+        "MunifTanjim/prettier.nvim",
+    })
 
     use ({
         "rebelot/kanagawa.nvim",
