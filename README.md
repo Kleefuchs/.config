@@ -1,22 +1,44 @@
-**<h1>These are my personal dotfiles feel free to use them. :)</h1>**
+**<h1>These dotfiles are based from and made from the config of Kleefuchs, which was also a great contributor to my dotfiles</h1>**
 
-I made this repo so I don't need to carry a USB-Stick with me every time I reinstall or install on a new machine.
-I've intentionally made it relatively easy to install (at least on Arch Linux).
+https://github.com/Kleefuchs/.config
+
+I made this so i can flex and have my hyprland config everywhere.
+also the whole config is catppuccin themed
 
 <br />
 <br />
+<h1>Desktop</h1>
 
-![Only Hyprland](https://github.com/user-attachments/assets/6ec75fce-6165-4fa5-a256-9d9ae9bb65b1)
+![desktop](https://github.com/Julianos1b/.config/blob/main/pictures/Desktop.png)
 
-![Hyprland and kitty](https://github.com/user-attachments/assets/5f9b068b-329b-4363-b0d2-db426b4a8427)
+<h1>Kitty</h1>
 
-![Neovim CPP](https://github.com/user-attachments/assets/0922a330-e5b9-4f0d-8cbd-5177e609945d)
+![kitty](https://github.com/Julianos1b/.config/blob/main/pictures/Kitty.png)
+
+<h1>Neovim Filetree</h1>
+
+![Neovim](https://github.com/Julianos1b/.config/blob/main/pictures/Nvim_Filetree.png)
+
+<h1>Neovim when coding</h1>
+
+![Neovim](https://github.com/Julianos1b/.config/blob/main/pictures/Nvim_Coding.png)
 
 Neovim does have dap (+dap-ui) and lsp support.
 It also shows your errors inline.
 
-![Waybar](https://github.com/user-attachments/assets/2c1cbf33-e60c-4f02-abaa-aa7021f4b5d8)
+<h1>Cava</h1>
 
+![Cava](https://github.com/Julianos1b/.config/blob/main/pictures/cava.png)
+
+<h1>Fastfetch</h1>
+
+![Fastfetch](https://github.com/Julianos1b/.config/blob/main/pictures/Fastfetch.png)
+
+under ~/.config/fastfetch/config.jsonc you can change the logo right at the bottom to any desired logo you want. 
+
+<h1>Waybar</h1>
+
+![Waybar](https://github.com/Julianos1b/.config/blob/main/pictures/Waybar.png)
 
 
 **<h2>How to install them</h2>**
@@ -29,15 +51,10 @@ You still need to run install.sh!
 **<h3>The following dependencies are not installed by the install.sh script because they themselves are needed by the script</h3>**
 **[yay](https://github.com/Jguer/yay)**
 <br />
-<br />
-<br />
 
-**<h4>Clone and enter repository</h4>**
 
-```
-git clone https://github.com/Kleefuchs/.config.git config
-cd config
-```
+**<h4>Go over the Releases tab and Download the latest config</h4>**
+
 
 **<h4>Copy everything into the .config directory</h4>**
 

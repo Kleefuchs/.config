@@ -11,7 +11,7 @@ window#waybar {
   transition-duration: 0.5s;
   /* background-color: #1e1e2e; */
   /* background-color: #181825; */
-  background-color: rgba(200,50, 200, 0.15);
+  background-color: rgba(79,137,255, 0.5);
   border-bottom: 2px rgba(200, 50, 200, 0.3) solid;
   /* background-color: rgba(24, 24, 37, 0.6); */
 }
@@ -21,7 +21,7 @@ window#waybar {
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
   /* background-color: #181825; */
-  background-color: rgba(200, 50, 200, 0.35);
+  background-color: rgba(174,105,255, 0.35);
   color: white;
 }
 
