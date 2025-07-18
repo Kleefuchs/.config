@@ -135,6 +135,16 @@ _G.packer_plugins = {
     path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
+  ["hydra.nvim"] = {
+    loaded = true,
+    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/hydra.nvim",
+    url = "https://github.com/nvimtools/hydra.nvim"
+  },
+  ["instant.nvim"] = {
+    loaded = true,
+    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/instant.nvim",
+    url = "https://github.com/jbyuki/instant.nvim"
+  },
   kanagawa = {
     loaded = true,
     path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/kanagawa",
@@ -189,6 +199,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/mini.notify",
     url = "https://github.com/echasnovski/mini.notify"
+  },
+  ["multicursors.nvim"] = {
+    loaded = true,
+    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/multicursors.nvim",
+    url = "https://github.com/smoka7/multicursors.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,

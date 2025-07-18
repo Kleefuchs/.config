@@ -138,8 +138,8 @@ return require('packer').startup(function(use)
 
     use {
         "goolord/alpha-nvim",
-        -- dependencies = { 'echasnovski/mini.icons' },
-        dependencies = { 'nvim-tree/nvim-web-devicons' },
+        -- requires = { 'echasnovski/mini.icons' },
+        requires = { { 'nvim-tree/nvim-web-devicons' }, },
         config = function()
             local startify = require("alpha.themes.startify")
             -- available: devicons, mini, default is mini
@@ -149,6 +149,17 @@ return require('packer').startup(function(use)
                 startify.config
             )
         end,
+    }
+
+    use ({
+        "jbyuki/instant.nvim",
+    })
+
+    use {
+        "smoka7/multicursors.nvim",
+        requires = {
+            { "nvimtools/hydra.nvim" },
+        },
     }
 
     use ({
