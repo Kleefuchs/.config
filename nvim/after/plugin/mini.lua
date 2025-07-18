@@ -26,6 +26,11 @@ vim.notify = notify.make_notify({
 vim.notify("Welcome to Kleefuch's neovim config!", vim.log.levels.INFO)
 
 
-local mini = require("mini.jump")
+local jump = require("mini.jump")
 
-mini.setup()
+jump.setup()
+
+local cursorword = require("mini.cursorword")
+
+cursorword.setup()
+

@@ -120,10 +120,15 @@ return require('packer').startup(function(use)
         "echasnovski/mini.hipatterns",
         "echasnovski/mini.notify",
         "echasnovski/mini.jump",
+        "echasnovski/mini.cursorword",
     })
 
     use ({
         "ntpeters/vim-better-whitespace",
+    })
+
+    use ({
+        "numToStr/Comment.nvim",
     })
 
     use ({
