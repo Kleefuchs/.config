@@ -18,8 +18,8 @@ local notify = require("mini.notify")
 notify.setup()
 
 vim.notify = notify.make_notify({
-    ERROR = { duration = 8000 },
-    WARN = { duration = 7000 },
+    ERROR = { duration = 30000 },
+    WARN = { duration = 10000 },
     INFO = { duration = 6000 },
 })
 
