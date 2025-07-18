@@ -113,6 +113,20 @@ return require('packer').startup(function(use)
     })
 
     use ({
+        "norcalli/nvim-colorizer.lua",
+    })
+
+    use ({
+        "echasnovski/mini.hipatterns",
+        "echasnovski/mini.notify",
+        "echasnovski/mini.jump",
+    })
+
+    use ({
+        "ntpeters/vim-better-whitespace",
+    })
+
+    use ({
         "rebelot/kanagawa.nvim",
         as = 'kanagawa',
     })

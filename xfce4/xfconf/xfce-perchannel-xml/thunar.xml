@@ -30,11 +30,7 @@
   <property name="last-restore-tabs" type="bool" value="true"/>
   <property name="misc-show-delete-action" type="bool" value="false"/>
   <property name="last-tabs-left" type="array">
-<<<<<<< HEAD
     <value type="string" value="file:///home/kleefuchs/.parallel/tmp/sshlogin/nohostname"/>
-=======
-    <value type="string" value="file:///home/kleefuchs/programming/web"/>
->>>>>>> 4dd72ece4579b7751f58844baa6f3341e947276d
   </property>
   <property name="last-focused-tab-left" type="int" value="0"/>
   <property name="last-focused-tab-right" type="int" value="0"/>

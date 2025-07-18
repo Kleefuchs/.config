@@ -154,6 +154,21 @@ _G.packer_plugins = {
     path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["mini.hipatterns"] = {
+    loaded = true,
+    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/mini.hipatterns",
+    url = "https://github.com/echasnovski/mini.hipatterns"
+  },
+  ["mini.jump"] = {
+    loaded = true,
+    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/mini.jump",
+    url = "https://github.com/echasnovski/mini.jump"
+  },
+  ["mini.notify"] = {
+    loaded = true,
+    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/mini.notify",
+    url = "https://github.com/echasnovski/mini.notify"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
@@ -163,6 +178,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-dap"] = {
     loaded = true,
@@ -243,6 +263,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  ["vim-better-whitespace"] = {
+    loaded = true,
+    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/vim-better-whitespace",
+    url = "https://github.com/ntpeters/vim-better-whitespace"
   },
   ["vim-fugitive"] = {
     loaded = true,
