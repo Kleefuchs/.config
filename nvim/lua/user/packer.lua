@@ -121,6 +121,7 @@ return require('packer').startup(function(use)
         "echasnovski/mini.notify",
         "echasnovski/mini.jump",
         "echasnovski/mini.cursorword",
+        "echasnovski/mini.clue",
     })
 
     use ({
