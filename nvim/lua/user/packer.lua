@@ -137,6 +137,10 @@ return require('packer').startup(function(use)
         'tpope/vim-fugitive',
     }
 
+    use ({
+        "mhinz/vim-signify",
+    })
+
     use {
         'lambdalisue/vim-suda',
     }
@@ -205,14 +209,50 @@ return require('packer').startup(function(use)
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
 
-use {
-      "catppuccin/nvim", 
-      as = "catppuccin" 
+
+    use ({
+        "norcalli/nvim-colorizer.lua",
+    })
+
+    use ({
+        "echasnovski/mini.hipatterns",
+        "echasnovski/mini.notify",
+        "echasnovski/mini.jump",
+        "echasnovski/mini.cursorword",
+        "echasnovski/mini.clue",
+    })
+
+    use ({
+        "ntpeters/vim-better-whitespace",
+    })
+
+    use ({
+        "numToStr/Comment.nvim",
+    })
+
+    use {
+        "goolord/alpha-nvim",
+        -- dependencies = { 'echasnovski/mini.icons' },
+        dependencies = { 'nvim-tree/nvim-web-devicons' },
+        config = function()
+            local startify = require("alpha.themes.startify")
+            -- available: devicons, mini, default is mini
+            -- if provider not loaded and enabled is true, it will try to use another provider
+            startify.file_icons.provider = "devicons"
+            require("alpha").setup(
+                startify.config
+            )
+        end,
     }
-
-
+    
     use ({
         "MunifTanjim/prettier.nvim",
     })
+    
+    use {
+      "catppuccin/nvim", 
+      as = "catppuccin" 
+    }
+end)
 
 

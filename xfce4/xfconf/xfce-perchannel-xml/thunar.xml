@@ -12,8 +12,8 @@
   <property name="last-window-height" type="int" value="985"/>
   <property name="last-toolbar-items" type="string" value="menu:0,back:1,forward:1,open-parent:1,open-home:1,undo:0,redo:0,zoom-in:0,zoom-out:0,zoom-reset:0,view-as-icons:0,view-as-detailed-list:0,view-as-compact-list:0,toggle-split-view:0,location-bar:1,reload:0,search:1,uca-action-1729426089913146-1:0,new-tab:0,new-window:0,view-switcher:0"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_38_PERCENT"/>
-  <property name="last-details-view-column-widths" type="string" value="50,50,124,50,50,87,50,50,426,50,50,63,50,85"/>
-  <property name="last-sort-column" type="string" value="THUNAR_COLUMN_DATE_MODIFIED"/>
+  <property name="last-details-view-column-widths" type="string" value="50,50,156,50,50,99,50,50,388,50,50,63,50,69"/>
+  <property name="last-sort-column" type="string" value="THUNAR_COLUMN_NAME"/>
   <property name="last-sort-order" type="string" value="GTK_SORT_DESCENDING"/>
   <property name="misc-single-click" type="bool" value="false"/>
   <property name="misc-use-csd" type="bool" value="false"/>
@@ -30,7 +30,7 @@
   <property name="last-restore-tabs" type="bool" value="true"/>
   <property name="misc-show-delete-action" type="bool" value="false"/>
   <property name="last-tabs-left" type="array">
-    <value type="string" value="file:///home/kleefuchs/.mozilla/firefox/cpnv06qb.default"/>
+    <value type="string" value="file:///home/kleefuchs/.parallel/tmp/sshlogin/nohostname"/>
   </property>
   <property name="last-focused-tab-left" type="int" value="0"/>
   <property name="last-focused-tab-right" type="int" value="0"/>
