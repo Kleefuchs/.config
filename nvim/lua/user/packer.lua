@@ -40,6 +40,10 @@ return require('packer').startup(function(use)
         'tpope/vim-fugitive',
     }
 
+    use ({
+        "mhinz/vim-signify",
+    })
+
     use {
         'lambdalisue/vim-suda',
     }
