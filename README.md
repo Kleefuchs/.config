@@ -61,6 +61,11 @@ sudo rm -r config
 
 **<h3>Neovim specific stuff</h3>**
 
+Execute following command for nvim-jdtls:
+```
+git clone https://github.com/mfussenegger/nvim-jdtls.git ~/.config/nvim/pack/plugins/start/nvim-jdtls
+```
+
 Navigate into the Neovim configuration and open Neovim.
 ```
 cd ~/.config/nvim
