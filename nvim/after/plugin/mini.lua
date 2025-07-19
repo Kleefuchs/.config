@@ -13,11 +13,6 @@ hipatterns.setup({
   },
 })
 
-local notify = require("mini.notify")
-
-vim.notify("Welcome to Kleefuch's neovim config!", vim.log.levels.INFO)
-
-
 local jump = require("mini.jump")
 
 jump.setup()
