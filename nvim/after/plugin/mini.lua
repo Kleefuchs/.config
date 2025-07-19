@@ -15,14 +15,6 @@ hipatterns.setup({
 
 local notify = require("mini.notify")
 
-notify.setup()
-
-vim.notify = notify.make_notify({
-    ERROR = { duration = 30000 },
-    WARN = { duration = 10000 },
-    INFO = { duration = 6000 },
-})
-
 vim.notify("Welcome to Kleefuch's neovim config!", vim.log.levels.INFO)
 
 

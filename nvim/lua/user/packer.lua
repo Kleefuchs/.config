@@ -153,7 +153,6 @@ return require('packer').startup(function(use)
 
     use ({
         "echasnovski/mini.hipatterns",
-        "echasnovski/mini.notify",
         "echasnovski/mini.jump",
         "echasnovski/mini.cursorword",
         "echasnovski/mini.clue",
