@@ -176,6 +176,15 @@ return require('packer').startup(function(use)
         },
     }
 
+    --AI:
+
+    use {
+        "supermaven-inc/supermaven-nvim",
+        config = function()
+            require("supermaven-nvim").setup(require("configs.supermaven"))
+        end,
+    }
+
     use ({
         "rebelot/kanagawa.nvim",
         as = 'kanagawa',
