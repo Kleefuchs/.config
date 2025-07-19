@@ -104,7 +104,8 @@ return require('packer').startup(function(use)
             {'nvim-neotest/nvim-nio'},
             {'rcarriga/nvim-dap-ui'},
             {'jonathan-elize/dap-info.nvim'},
-        }
+            {'Weissle/persistent-breakpoints.nvim'},
+        },
     }
 
     use {
