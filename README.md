@@ -14,6 +14,15 @@ I've intentionally made it relatively easy to install (at least on Arch Linux).
 
 Neovim does have dap (+dap-ui) and lsp support.
 It also shows your errors inline.
+It also has Supermaven (AI Copilot Support built in)
+The currently supported languages are:
+-html
+-javascript
+-css (Only short things like bgc for background-color which I like because it is really fast to type)
+-c++
+-c
+-rust
+-java
 
 ![Waybar](https://github.com/user-attachments/assets/2c1cbf33-e60c-4f02-abaa-aa7021f4b5d8)
 
