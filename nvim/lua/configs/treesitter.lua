@@ -1,6 +1,6 @@
 local config = {
   -- A list of parser names, or "all" (the listed parsers MUST always be installed)
-  ensure_installed = { "javascript", "typescript", "c", "lua", "rust", "vim", "vimdoc", "query", "markdown", "markdown_inline" },
+  ensure_installed = { "javascript", "typescript", "c", "java", "lua", "rust", "vim", "vimdoc", "query", "markdown", "markdown_inline", "bash", "yaml", "toml", "json", "html", "css" },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,

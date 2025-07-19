@@ -19,7 +19,7 @@ return require('packer').startup(function(use)
             run = ':TSUpdate'
         },
         config = function()
-            require("treesitter").setup(require("configs.treesitter"))
+            require("nvim-treesitter.configs").setup(require("configs.treesitter"))
         end,
     }
 
@@ -67,14 +67,13 @@ return require('packer').startup(function(use)
             'html-lsp',
             'typescript-language-server',
             'emmet-language-server',
+            'java-test',
+            'jdtls',
         }
     }
 
-    use { --specific lsp plugins
-        "mfussenegger/nvim-jdtls",
-        requires = {
-            { "mfussenegger/nvim-dap" },
-        }
+    use {
+        "mfussenegger/nvim-jdtls", -- java lsp
     }
 
     use {
@@ -153,7 +152,6 @@ return require('packer').startup(function(use)
 
     use ({
         "echasnovski/mini.hipatterns",
-        "echasnovski/mini.notify",
         "echasnovski/mini.jump",
         "echasnovski/mini.cursorword",
         "echasnovski/mini.clue",

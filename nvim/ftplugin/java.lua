@@ -1,26 +1,33 @@
-local jdtls_bin = vim.fn.stdpath("data") .. "/mason/bin/jdtls"
-
-local keymap = vim.keymap
-
-local opts = { noremap = true, silent = true }
-
-local lsp_attach = function(client, bufnr)
-  require("jdtls.dap").setup_dap_main_class_configs() -- Discover main classes for debugging
-
-  opts.buffer = bufnr
-
-  -- set keybinds. Copied my lspconfig keybinds here
-end
+-- HOW TO CONFIGURE THE JAVA DEBUGGER
+-- -------------------------------------------------------------------------
+-- https://github.com/mfussenegger/nvim-jdtls#configuration-quickstart
+-- -------------------------------------------------------------------------
+--
+-- YOU MUST:
+-- * Install the system dependency 'jdtls' in your operative system.
+-- * Set the right path of your jdtls executable below in 'cmd'.
+--
+-- IF STILL FAILS CHECK:
+-- * You have installed 'java-debug-adapter' on mason.
+-- * The path of "bundles" if correct.
 
 local config = {
-  cmd = { jdtls_bin },
-  root_dir = vim.fs.dirname(vim.fs.find({ "gradlew", ".git", "mvnw" }, { upward = true })[1]),
-  on_attach = lsp_attach,
-  init_options = {
-    bundles = {
-      vim.fn.glob(vim.fn.stdpath("data") .. "/java-debug/com.microsoft.java.debug.plugin/target/com.microsoft.java.debug.plugin-*.jar", 1),
-    },
-  },
+    cmd = {vim.fn.stdpath("data") .. "/mason/bin/jdtls"},
+    root_dir = vim.fs.dirname(vim.fs.find({'gradlew', '.git', 'mvnw'}, { upward = true })[1]),
+    init_options = {
+      bundles = {
+            vim.fn.glob(vim.fn.stdpath('data')..'/mason/packages/java-test/extension/server/*.jar', true ),
+            vim.fn.glob(vim.fn.stdpath('data')..'/mason/packages/java-debug-adapter/extension/server/com.microsoft.java.debug.plugin-*.jar', true ),
+        }
+    }
 }
-require("jdtls").start_or_attach(config)
+require('jdtls').start_or_attach(config)
 
+-- Give enough time for jdt to fully load the project, or it will fail with
+-- "No LSP client found"
+local timer = 2500
+for i = 0, 12, 1 do
+  vim.defer_fn(function() test = require('jdtls.dap').setup_dap_main_class_configs()
+    end, timer)
+  timer = timer + 2500
+end

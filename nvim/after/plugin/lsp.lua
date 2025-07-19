@@ -17,7 +17,6 @@ require('mason-lspconfig').setup({
         'ts_ls',
         'asm_lsp',
         'jsonls',
-        'jdtls',
     },
 
 
