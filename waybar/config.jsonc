@@ -8,7 +8,7 @@
   "passthrough": false,
   "fixed-center": true,
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
-  "modules-center": ["custom/waybar-scrolling-mpris",],
+  "modules-center": ["custom/waybar-scrolling-mpris", "custom/cava"],
   "modules-right": [
     "cpu",
     "memory",
@@ -19,6 +19,11 @@
     "custom/notification",
     "custom/power",
   ],
+
+  "custom/cava": {
+      "format": "{}",
+      "exec": "~/.config/waybar/waybar-cava/cava.sh ~/.config/waybar/config.jsonc",
+  },
 
   "custom/waybar-scrolling-mpris": {
       "format": "{}",
