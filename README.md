@@ -25,6 +25,16 @@ also the whole config is catppuccin themed
 
 Neovim does have dap (+dap-ui) and lsp support.
 It also shows your errors inline.
+It also has Supermaven (AI Copilot Support built in)
+The currently supported languages are:
+<br />
+-html<br />
+-javascript<br />
+-css (Only short things like bgc for background-color which I like because it is really fast to type)<br />
+-c++<br />
+-c<br />
+-rust<br />
+-java<br />
 
 <h1>Cava</h1>
 
@@ -77,6 +87,13 @@ sudo rm -r config
 ```
 
 **<h3>Neovim specific stuff</h3>**
+
+Execute following commands for nvim-jdtls:
+```
+git clone https://github.com/microsoft/java-debug.git ~/.local/share/nvim/java-debug
+cd ~/.local/share/nvim/java-debug
+./mvnw clean install
+```
 
 Navigate into the Neovim configuration and open Neovim.
 ```
