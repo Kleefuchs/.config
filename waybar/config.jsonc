@@ -22,7 +22,7 @@
 
   "custom/cava": {
       "format": "{}",
-      "exec": "~/.config/waybar/waybar-cava/cava.sh ~/.config/waybar/config.jsonc",
+      "exec": "~/.config/waybar/cava.sh ~/.config/waybar/config.jsonc",
   },
 
   "custom/waybar-scrolling-mpris": {
