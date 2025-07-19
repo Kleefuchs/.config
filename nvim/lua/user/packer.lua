@@ -17,11 +17,17 @@ return require('packer').startup(function(use)
         'nvim-treesitter/nvim-treesitter',
         {
             run = ':TSUpdate'
-        }
+        },
+        config = function()
+            require("treesitter").setup(require("configs.treesitter"))
+        end,
     }
 
     use {
         'nvim-treesitter/nvim-treesitter-context',
+        config = function()
+            require("treesitter-context").setup(require("configs.treesitter-context"))
+        end,
     }
 
     use {
@@ -111,6 +117,11 @@ return require('packer').startup(function(use)
     use({
         "kylechui/nvim-surround",
         tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+        config = function()
+            require("nvim-surround").setup({
+                -- Configuration here, or leave empty to use defaults
+            })
+        end,
     })
 
     use ({
@@ -123,16 +134,22 @@ return require('packer').startup(function(use)
 
     use {
         'nvim-lualine/lualine.nvim',
-        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true },
+        config = function()
+            require('lualine').setup(require('configs.lualine'))
+        end,
     }
 
     use ({
         "MunifTanjim/prettier.nvim",
     })
 
-    use ({
+    use {
         "norcalli/nvim-colorizer.lua",
-    })
+        config = function()
+            require("colorizer").setup()
+        end,
+    }
 
     use ({
         "echasnovski/mini.hipatterns",
@@ -146,9 +163,12 @@ return require('packer').startup(function(use)
         "ntpeters/vim-better-whitespace",
     })
 
-    use ({
+    use {
         "numToStr/Comment.nvim",
-    })
+        config = function()
+            require("Comment").setup()
+        end,
+    }
 
     use {
         "goolord/alpha-nvim",
@@ -174,6 +194,11 @@ return require('packer').startup(function(use)
         requires = {
             { "nvimtools/hydra.nvim" },
         },
+        config = function()
+            require("multicursors").setup {
+
+            }
+        end,
     }
 
     --AI:
