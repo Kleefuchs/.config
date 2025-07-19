@@ -40,6 +40,13 @@ return require('packer').startup(function(use)
         'tpope/vim-fugitive',
     }
 
+    use {
+        "eatgrass/maven.nvim",
+        config = function()
+            require('maven').setup(require('configs.maven'))
+        end,
+    }
+
     use ({
         "mhinz/vim-signify",
     })
@@ -54,6 +61,13 @@ return require('packer').startup(function(use)
             'html-lsp',
             'typescript-language-server',
             'emmet-language-server',
+        }
+    }
+
+    use { --specific lsp plugins
+        "mfussenegger/nvim-jdtls",
+        requires = {
+            { "mfussenegger/nvim-dap" },
         }
     }
 

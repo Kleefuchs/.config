@@ -175,6 +175,12 @@ _G.packer_plugins = {
     path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["maven.nvim"] = {
+    config = { "\27LJ\2\nM\0\0\5\0\4\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0A\0\0\1K\0\1\0\18configs.maven\nsetup\nmaven\frequire\0" },
+    loaded = true,
+    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/maven.nvim",
+    url = "https://github.com/eatgrass/maven.nvim"
+  },
   ["mini.clue"] = {
     loaded = true,
     path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/mini.clue",
@@ -234,6 +240,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text",
     url = "https://github.com/theHamsta/nvim-dap-virtual-text"
+  },
+  ["nvim-jdtls"] = {
+    loaded = true,
+    path = "/home/kleefuchs/.local/share/nvim/site/pack/packer/start/nvim-jdtls",
+    url = "https://github.com/mfussenegger/nvim-jdtls"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -323,6 +334,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: maven.nvim
+time([[Config for maven.nvim]], true)
+try_loadstring("\27LJ\2\nM\0\0\5\0\4\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0A\0\0\1K\0\1\0\18configs.maven\nsetup\nmaven\frequire\0", "config", "maven.nvim")
+time([[Config for maven.nvim]], false)
 -- Config for: alpha-nvim
 time([[Config for alpha-nvim]], true)
 try_loadstring("\27LJ\2\n‰\1\0\0\4\0\b\0\r6\0\0\0'\2\1\0B\0\2\0029\1\2\0'\2\4\0=\2\3\0016\1\0\0'\3\5\0B\1\2\0029\1\6\0019\3\a\0B\1\2\1K\0\1\0\vconfig\nsetup\nalpha\rdevicons\rprovider\15file_icons\26alpha.themes.startify\frequire\0", "config", "alpha-nvim")

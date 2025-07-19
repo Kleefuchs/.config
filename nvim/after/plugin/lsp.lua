@@ -17,12 +17,16 @@ require('mason-lspconfig').setup({
         'ts_ls',
         'asm_lsp',
         'jsonls',
+        'jdtls',
     },
 
 
     handlers = {
         function(server_name)
-            require('lspconfig')[server_name].setup({})
+            require('lspconfig')[server_name].setup({
+                on_attach = on_attach,
+                capabilities = capabilities,
+            })
         end,
     },
 })

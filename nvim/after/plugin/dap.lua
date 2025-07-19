@@ -68,6 +68,16 @@ local codelldb = {
     stopOnEntry = false,
 }
 
+dap.configurations.java = {
+    {
+        type = "java",
+        name = "Debug",
+        request = "launch",
+        program = "${file}",
+        cwd = '${workspaceFolder}',
+    },
+}
+
 dap.configurations.c = {
     codelldb
 }
