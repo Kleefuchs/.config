@@ -16,6 +16,7 @@ Neovim does have dap (+dap-ui) and lsp support.
 It also shows your errors inline.
 It also has Supermaven (AI Copilot Support built in)
 The currently supported languages are:
+<br />
 -html<br />
 -javascript<br />
 -css (Only short things like bgc for background-color which I like because it is really fast to type)<br />
