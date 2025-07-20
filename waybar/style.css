@@ -48,6 +48,15 @@ window#waybar {
     border-radius: 15px;
 }
 
+#custom-cava {
+    color: white;
+    background-color: rgba(200, 50, 200, 0.35);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+}
+
+
 #clock,
 #pulseaudio,
 #custom-logo,

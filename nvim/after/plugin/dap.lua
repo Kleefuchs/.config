@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-nvim-dap").setup({
-    ensure_installed = {"codelldb", "lldb"},
+    ensure_installed = {"codelldb", "lldb", "java-debug-adapter"},
     automatic_installation = true,
     handlers = {},
 })
@@ -91,5 +91,21 @@ dap.configurations.rust = {
     codelldb
 }
 
-vim.keymap.set("n", "<leader>db", function () dap.toggle_breakpoint() end)
+local pb = require('persistent-breakpoints')
+pb.setup {
+    load_breakpoints_event = { "BufReadPost" }
+};
+
+local pbapi = require('persistent-breakpoints.api')
+
+vim.keymap.set("n", "<leader>dc", function () dap.continue() end)
 vim.keymap.set("n", "<leader>dr", function () dap.continue() end)
+vim.keymap.set("n", "<leader>dd", function () dap.disconnect() end)
+vim.keymap.set("n", "<leader>de", function () dap.step_out() end)
+vim.keymap.set("n", "<leader>di", function () dap.step_into() end)
+vim.keymap.set("n", "<leader>do", function () dap.step_over() end)
+
+vim.keymap.set("n", "<leader>dbt", function () pbapi.toggle_breakpoint() end)
+vim.keymap.set("n", "<leader>dbcs", function () pbapi.set_conditional_breakpoint() end)
+vim.keymap.set("n", "<leader>dbca", function () pbapi.clear_all_breakpoints() end)
+vim.keymap.set("n", "<leader>dls", function () pbapi.set_log_point() end)
