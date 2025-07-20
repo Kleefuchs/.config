@@ -16,7 +16,7 @@
     ],
     "modules-right": [
         "custom/cava",
-        "battetry",
+        "battery",
         "cpu",
         "memory",
         "pulseaudio",
