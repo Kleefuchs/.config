@@ -212,10 +212,6 @@ return require('packer').startup(function(use)
 
     use {
         "supermaven-inc/supermaven-nvim",
-        cmd = {
-            "SupermavenStart",
-            "SupermavenToggle",
-        },
         config = function()
             require("supermaven-nvim").setup(require("configs.supermaven"))
         end,
