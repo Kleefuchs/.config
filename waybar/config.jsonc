@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 40,
+    "height": 44,
     "spacing": 2,
     "exclusive": true,
     "gtk-layer-shell": true,
@@ -12,10 +12,10 @@
         "hyprland/window"
     ],
     "modules-center": [
-        "custom/waybar-scrolling-mpris"
+        "custom/waybar-scrolling-mpris",
+        "custom/cava",
     ],
     "modules-right": [
-        "custom/cava",
         "battery",
         "cpu",
         "memory",
