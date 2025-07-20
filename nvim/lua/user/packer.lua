@@ -96,6 +96,14 @@ return require('packer').startup(function(use)
     }
 
     use {
+        'xzbdmw/colorful-menu.nvim',
+        config = function()
+            require("colorful-menu").setup(require("configs.colorful-menu"))
+        end,
+
+    }
+
+    use {
         'mfussenegger/nvim-dap',
         requires = {
             {'williamboman/mason.nvim'},
@@ -204,6 +212,10 @@ return require('packer').startup(function(use)
 
     use {
         "supermaven-inc/supermaven-nvim",
+        cmd = {
+            "SupermavenStart",
+            "SupermavenToggle",
+        },
         config = function()
             require("supermaven-nvim").setup(require("configs.supermaven"))
         end,
