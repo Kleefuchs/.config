@@ -22,6 +22,9 @@ configs:
       width: 1920
       height: 1080
   icons:
+    "/home/kleefuchs/Desktop/Microsoft Edge.desktop":
+      row: 5
+      col: 0
     "/":
       row: 1
       col: 0
@@ -35,6 +38,10 @@ configs:
     "/home/kleefuchs":
       row: 0
       col: 0
+    "4315662200000000":
+      row: 3
+      col: 0
+      last_seen: 1754164337653521
     "3ac19b2600000000":
       row: 3
       col: 0

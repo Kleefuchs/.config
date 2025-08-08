@@ -63,6 +63,7 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-items" type="array">
+        <value type="string" value="toolbox"/>
         <value type="string" value="firewall-applet"/>
         <value type="string" value="droidcam"/>
         <value type="string" value="steam"/>

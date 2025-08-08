@@ -17,8 +17,8 @@ require('mason-lspconfig').setup({
         'ts_ls',
         'asm_lsp',
         'jsonls',
+        'omnisharp',
     },
-
 
     handlers = {
         function(server_name)
@@ -29,6 +29,16 @@ require('mason-lspconfig').setup({
         end,
     },
 })
+
+local os = require('os')
+local omnisharp_server_location = os.getenv('OMNISHARP_LANGUAGE_SERVER')
+-- somewhere in the code where server configuration is defined
+require('lspconfig').omnisharp.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+    cmd = { omnisharp_server_location, "--languageserver" , "--hostPID", tostring(pid) },
+ })
+
 
 -- Add cmp_nvim_lsp capabilities settings to lspconfig
 -- This should be executed before you configure any language server
