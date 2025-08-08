@@ -6,7 +6,7 @@ local config = {
     },
     ignore_filetypes = {},
     color = {
-        suggestion_color = "#333333",
+        suggestion_color = "#666666",
         cterm = 244,
     },
     log_level = "info", -- set to "off" to disable logging completely
